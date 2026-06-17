@@ -123,6 +123,7 @@ dropdown {
   border: 1px solid grey;
   padding: 6px 40px;
   border-radius: 10px;
+  font-size: 14px;
   font-weight: 700;
   right: 0;
   &:hover {
