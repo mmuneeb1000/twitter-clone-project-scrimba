@@ -12,6 +12,7 @@ A lightweight Twitter/X clone built with vanilla JavaScript.
 - Delete user-created tweets
 - Persist tweets, likes, retweets, and replies using Local Storage
 - Generate unique IDs with UUID
+- Dynamic search bar that filters keywords (try searching 'HTML')
 
 ## What I Learned
 

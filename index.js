@@ -1,5 +1,17 @@
 import { tweetsData as initialTweetsData } from "./data.js";
 import { v4 as uuidv4 } from "https://jspm.dev/uuid";
+
+document
+  .querySelector(".keyword-search")
+  .addEventListener("input", handleSearch);
+
+let searchQuery = "";
+
+function handleSearch(e) {
+  searchQuery = e.target.value.toLowerCase();
+  render();
+}
+
 function saveToLocalStorage() {
   localStorage.setItem("tweetsData", JSON.stringify(tweetsData));
 }
@@ -127,8 +139,14 @@ function handleTweetBtnClick() {
 
 function getFeedHtml() {
   let feedHtml = ``;
+  const filteredTweets = tweetsData.filter((tweet) => {
+    const text = tweet.tweetText.toLowerCase();
+    const handle = tweet.handle.toLowerCase();
 
-  tweetsData.forEach(function (tweet) {
+    return text.includes(searchQuery) || handle.includes(searchQuery);
+  });
+
+  filteredTweets.forEach(function (tweet) {
     let likeIconClass = "";
 
     if (tweet.isLiked) {
