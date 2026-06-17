@@ -1,19 +1,41 @@
-# Getting Started
-Install the dependencies and run the project
-```
-npm install
-npm start
-```
+# Twimba
 
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
+A lightweight Twitter/X clone built with vanilla JavaScript.
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Fullstack Developer Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+## Features
 
-- [Our courses](https://scrimba.com/courses)
-- [The Frontend Career Path](https://scrimba.com/fullstack-path-c0fullstack)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+- Create new tweets
+- Like and unlike tweets
+- Retweet and undo retweets
+- Add replies to tweets
+- Toggle reply threads
+- Delete user-created tweets
+- Persist tweets, likes, retweets, and replies using Local Storage
+- Generate unique IDs with UUID
 
-Happy Coding!
+## What I Learned
+
+- Event delegation with `data-*` attributes
+- Dynamic rendering with template literals
+- Working with arrays of objects
+- Updating nested data structures
+- Saving and retrieving data from Local Storage
+- Managing application state and UI state
+- Using UUIDs to uniquely identify content
+
+## Technologies
+
+- HTML
+- CSS
+- JavaScript (ES6+)
+- UUID
+- Local Storage API
+
+## Future Improvements
+
+- Delete replies
+- Edit tweets and replies
+- User profiles
+- Character limits
+- Relative timestamps
+- Dark mode
