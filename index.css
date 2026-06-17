@@ -103,7 +103,9 @@ button {
   display: flex;
   gap: 4px;
 }
-
+.tweet-options {
+  text-align: end;
+}
 .tweet-reply {
   border-top: 1px solid lightgray;
   padding: 20px 0 0 0px;
@@ -132,10 +134,6 @@ button {
   width: 48px;
 }
 
-.reply-box {
-  display: none;
-}
-
 /* utility */
 .hidden {
   display: none;
@@ -145,5 +143,10 @@ button {
   main,
   header {
     width: 290px;
+  }
+
+  .tweet-text,
+  .tweet-details {
+    width: 100%;
   }
 }
