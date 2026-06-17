@@ -201,6 +201,9 @@ dropdown {
   header {
     width: 290px;
   }
+  header {
+    margin-top: 10px;
+  }
 
   .tweet-text {
     width: 100%;
